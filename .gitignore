@@ -1,0 +1,116 @@
+# ── Secrets & env ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+aws/cdk/.env
+aws/cdk/cdk-outputs.json
+**/hf_token*
+**/.aws/
+
+# ── Claude + IDE ──────────────────────────────────────────────────────────────
+.claude/
+.cursor/
+.vscode/
+.idea/
+CLAUDE.md
+**/CLAUDE.md
+LESSONS_LEARNED.md
+
+# ── macOS / OS ────────────────────────────────────────────────────────────────
+.DS_Store
+.test_write
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ── Node / Vite ───────────────────────────────────────────────────────────────
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# ── CDK artifacts ─────────────────────────────────────────────────────────────
+aws/cdk/cdk.out/
+aws/cdk/cdk.context.json
+aws/*.log
+**/cdk.out/
+
+# ── Legacy SAM-era webapp infra (superseded by aws/cdk/) ──────────────────────
+medmcqa/infrastructure/
+
+# ── ML artifacts ──────────────────────────────────────────────────────────────
+checkpoints/
+quantized/
+models/
+logs/
+results/
+results_finetuned/
+results_finetuned_cot/
+results_local_llm/
+results_local_llm_cot/
+wandb/
+outputs/
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+*.pt
+
+# ── Raw data / test sets (images, JSONL, exams) ───────────────────────────────
+medmcqa/data/
+med/medmcqa/data/
+test sets/Test_set_*/
+test sets/dataset_json/
+test sets/images/
+test sets/results/
+test sets/results_finetuned*/
+test sets/results_local_llm*/
+test sets/*.log
+test sets/__pycache__/
+test sets/MCAT evaluation.ipynb
+test sets/notebooks/
+
+# ── PDFs / slides / reports / zips ────────────────────────────────────────────
+*.pdf
+*.pptx
+*.xlsx
+*.zip
+*.tex
+consolidated_csvs/
+figures/
+showcase/
+docs/
+EDL*.zip
+
+# ── Weekly lecture material (not part of project) ─────────────────────────────
+W*_S*/
+HW/
+
+# ── Repo state the curation doesn't need ──────────────────────────────────────
+sync.sh
+.syncignore
+3438859.pdf
+DLProject.pdf
+
+# ── Temp nested git backups created during curation ───────────────────────────
+**/.git.bak-curate/
+
+# ── Non-code assets (slides / screenshots / previews) ─────────────────────────
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+!**/src/**/*.svg
+

@@ -1,0 +1,11 @@
+{
+  "task": "multiple_choice_qa",
+  "custom_head_type": "linear",
+  "custom_head_in_features": 768,
+  "custom_head_out_features": 1,
+  "num_choices": 4,
+  "use_context": true,
+  "base_model_name": "microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
+  "encoder_subdir": "encoder",
+  "custom_head_weights": "mcqa_head.pt"
+}

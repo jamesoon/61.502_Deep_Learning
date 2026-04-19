@@ -1,0 +1,15 @@
+{
+  "app": ".venv/bin/python3 app.py",
+  "watch": {
+    "include": ["**"],
+    "exclude": ["README.md", "cdk*.json", "**/__pycache__/**", "**/.venv/**"]
+  },
+  "context": {
+    "region": "ap-southeast-1",
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "@aws-cdk/aws-cognito:enableStandardAttributes": true,
+    "domainName": "mdaie-sutd.fit",
+    "subDomain": "dl.mdaie-sutd.fit"
+  }
+}
